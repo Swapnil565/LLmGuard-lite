@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Config files
+.llmguard/
+
+# Reports
+report.json
+report.html
+*.log
+
+# Temp files
+tmpclaude-*
+*.tmp
+
+# Claude Code
+.claude/
+
+# Internal docs & scripts (not for public repo)
+docs/internal/
+backfill_commits.sh
