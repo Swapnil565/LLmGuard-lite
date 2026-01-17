@@ -1,0 +1,25 @@
+# LLM SDKs (minimal set)
+openai==1.12.0              # OpenAI API
+anthropic==0.18.1           # (v0.2) Claude support
+
+# CLI & UX
+click==8.1.7                # CLI framework
+rich==13.7.0                # Beautiful terminal output
+
+# Document handling
+python-docx==1.1.0          # DOCX generation (novel research)
+
+# Core utilities
+pydantic==2.6.0             # Data validation
+requests==2.31.0            # HTTP client
+PyYAML==6.0.1               # Config files
+
+# Testing
+pytest==7.4.3
+pytest-cov==4.1.0
+pytest-mock==3.12.0
+
+# Development
+black==23.12.0              # Code formatting
+ruff==0.1.9                 # Linting
+mypy==1.8.0                 # Type checking

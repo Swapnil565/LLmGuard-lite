@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llmguard-lite"
+version = "0.1.0"
+description = "Security testing framework for LLM applications"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [{name = "LLMGuard Team"}]
+keywords = ["llm", "security", "testing", "prompt-injection", "ai-safety"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Security",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "openai>=1.12.0",
+    "click>=8.1.7",
+    "rich>=13.7.0",
+    "python-docx>=1.1.0",
+    "PyYAML>=6.0.1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4.3", "pytest-cov>=4.1.0", "pytest-mock>=3.12.0", "black>=23.12.0", "ruff>=0.1.9"]
+
+[project.scripts]
+llmguard = "llmguard.cli:cli"
+
+[project.urls]
+Homepage = "https://github.com/yourusername/llmguard-lite"
+Issues = "https://github.com/yourusername/llmguard-lite/issues"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short"
+
+[tool.black]
+line-length = 100
+
+[tool.ruff]
+line-length = 100
